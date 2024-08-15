@@ -1,0 +1,1940 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.conten {
+
+    width: 95%;
+    padding: 10px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+/*-------------------header-----------------------*/
+header {
+    width: 100%;
+    padding-top: 20px;
+    height: 120px;
+
+
+}
+.top-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.logo {
+    color: rgb(172, 136, 206);
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.icon-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-bar {
+    display: flex;
+    padding: 5px;
+}
+.img-bar img {
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+.tx-bar {
+    padding: 10px;
+}
+.tx-bar h3 {
+    color: rgba(0, 0, 0, 0.644);
+    padding: 2px;
+}
+.tx-bar p {
+    color: gray;
+    padding: 2px;
+}
+
+#serch {
+    padding: 10px;
+    width: 300px;
+    border-radius: 2px;
+    border: none;
+    outline: 1px solid blue;
+    height: 40px;
+}
+
+#sel {
+    margin-left: -4PX;
+    height: 40px;
+    border: none;
+    outline: 1px solid rgba(0, 0, 255, 0.589);
+}
+
+#ic {
+
+    width: 25px;
+}
+
+#butn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -6PX;
+}
+
+.ten {
+    font-size: 13px;
+    position: relative;
+    padding: 1px;
+    bottom: 17%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(131, 131, 190);
+}
+
+nav {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+    color: white;
+    background-color: blueviolet;
+    height: 50px;
+    align-items: center;
+}
+
+.logo-nav {
+    font-size: 20px;
+    padding-left: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.ul-list {
+    display: none; 
+    text-align: center;
+    border-radius: 4px;
+  
+}
+.ul-list ul{
+    list-style: none;
+}
+.ul-list ul a{
+   color: brown;
+   text-decoration: none;
+   font-size: 16px;
+}
+.ul-list.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+  width: 100px;
+  height: 150px;
+  background-color: white;
+}
+
+.ul-nav {
+    width: 60%;
+    text-align: end;
+    justify-content: end;
+
+}
+
+.ul-nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.ul-nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    transition: 0.9s;
+
+}
+
+.ul-nav ul a:hover {
+    color: rgb(226, 130, 130);
+
+}
+/*------------------------------------------------------HOME-----------------------------------------------*/
+.hom {
+    width: 100%;
+    /* background:url(/img/back.home.webp) 50% 50% no-repeat;
+    background-attachment: fixed; */
+    background-image: url(img/back.home.webp);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-hom {
+    width: 50%;
+    color: black;
+    padding: 30px;
+}
+
+#he {
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+.text-hom h1 {
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 25px;
+
+}
+
+.text-hom p {
+    padding-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#submit {
+    margin-top: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+#submit:hover {
+    background-color: transparent;
+    color: blue;
+    border: 1px solid blueviolet;
+}
+
+.img-hom {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding-top: 50px;
+    animation-name: move;
+    animation-duration: 4S;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    rotate: -10deg;
+
+}
+
+.img-hom img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+/*------------------------------------------------------------SUBERDEALS-----------------------------------------*/
+.deals {
+
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.item-del {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-del {
+    cursor: pointer;
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid rgba(87, 216, 255, 0.685);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+    border-radius: 5px;
+}
+
+.text-del p {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.all-sels {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+}
+
+.sec-sel {
+    width: 30%;
+}
+
+.con-one {
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.493);
+    transition: transform 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.con-one:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.nna {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nna h2 {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(18, 18, 37);
+}
+
+.nna span {
+    color: rgb(214, 184, 241);
+    padding: 10px;
+    font-size: 22px;
+}
+
+.one-img {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+}
+
+.text-one {
+    width: 100%;
+
+}
+
+.all-prd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod {
+    color: gray;
+    width: 45%;
+
+}
+
+.prod h2 {
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.price {
+    color: gray;
+    text-align: end;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.price h3 {
+    padding: 6px;
+    color: rgb(226, 31, 31);
+}
+
+.af {
+    width: 100%;
+    margin: auto;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+
+.bf {
+    width: 35%;
+    height: 10px;
+    background-color: rgb(79, 136, 221);
+    border-radius: 5px;
+}
+
+.end-text {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.on-end p {
+    color: gray;
+}
+
+table {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+}
+
+table td {
+
+    font-size: 12px;
+    color: gray;
+}
+
+.sub {
+    padding-top: 30px;
+
+}
+
+.sub h1 {
+    padding: 10px;
+}
+
+.sub #submit {
+    padding: 8px;
+    width: 200px;
+    font-size: 18px;
+
+}
+
+.con-tow {
+    width: 70%;
+    padding: 20px;
+}
+
+.bar-nav {
+    width: 100%;
+
+}
+
+.bar-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.bar-nav ul li {
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+    padding-right: 15px;
+    padding-left: 8px;
+
+
+}
+
+.bar-nav ul li:hover {
+
+    border-bottom: 3px solid rgb(221, 37, 37);
+}
+
+.bar-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.bar-nav ul li a:hover {
+    color: black;
+}
+
+.alll-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-tow {
+    width: 25%;
+    height: 280px;
+    padding: 10px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(195, 165, 223, 0.877);
+    margin-top: 20px;
+    transition: transform 0.1s;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+.card-tow:hover {
+    border: none;
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 4px 4px 15px 15px rgba(213, 65, 226, 0.171);
+    opacity:1;
+}
+
+.add-cart{
+   
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    opacity: .4;
+transition: 0.2s;
+cursor: pointer;
+
+}
+.add-cart:hover{
+opacity: 1;
+}
+ 
+
+
+.img-cardd {
+    width: 60%;
+    margin: auto;
+    height: 90px;
+    margin: 5px auto;
+
+
+}
+
+.img-cardd img {
+    width: 100%;
+    height: 100%;
+}
+
+.tex-cardd {
+    text-align: center;
+    height: 30%;
+    padding-top: 10px;
+}
+
+.tex-cardd p {
+    padding: 2px;
+    font-size: 14px;
+    color: gray;
+}
+
+.tex-cardd h4,
+h5 {color: rgba(0, 0, 0, 0.678);}
+
+.tag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.849);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.sal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(230, 47, 14, 0.897);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+.b {
+    width: 30px;
+    height: 30px;
+}
+
+.contnerIcon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.cardIcon {
+    width: 15%;
+    padding: 10px;
+   cursor: pointer;
+
+}
+
+
+
+.imgCard {
+    width: 50%;
+    height: 60px;
+    padding: 1px;
+    margin: auto;
+    padding: 5px;
+}
+
+.imgCard img {
+    width: 90%;
+    margin-left: 2px;
+    height: 100%;
+}
+
+.textCard {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+/*---------------------------------------------------LAPTOBS------------------------------------------------*/
+
+.lab {
+    height: 100vh;
+    width: 100%;
+    background: url(/img/xbanner_2_background.jpg.pagespeed.ic.4E_HslFvB8.webp) no-repeat 50% 50% scroll;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-lab {
+    padding-left: 50px;
+    width: 30%;
+    margin: auto;
+}
+
+.text-lab h2 {
+    color: rgba(0, 0, 0, 0.829);
+    padding: 10px;
+}
+
+.text-lab p {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.img-lab {
+    width: 60%;
+    padding: 20px;
+}
+
+.img-lab img {
+    width: 100%;
+    transition: transform 0.4s;
+    cursor: pointer;
+
+}
+
+.img-lab img:hover {transform: scale(1.03);}
+
+.labs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.la {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid aqua;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.la:hover {background-color: blue;}
+
+
+/*--------------------HOT NEW ARRIVEL------------------------*/
+.arrivel {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.nav-arriv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-arriv ul {
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+.nav-arriv ul li {
+    height: 30px;
+    text-align: center;
+    margin-right: 5px;
+    padding-right: 15px;
+    padding-left: 8px;
+
+}
+.nav-arriv ul li:hover { border-bottom: 3px solid rgb(37, 65, 221);}
+
+.nav-arriv ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.nav-arriv ul li a:hover {color: black;}
+
+.all-item {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.arriv-box {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid rgba(137, 43, 226, 0.541);
+}
+
+.part-arriv {
+    width: 30%;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.part-arriv:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.205);
+}
+
+.txt-arriv {padding-top: 10px;}
+.txt-arriv p {   color: gray;}
+.txt-arriv h3 {color: rgba(0, 0, 0, 0.658);}
+.co-arriv {
+    padding: 15px;  display: flex; justify-content: space-between;  color: rgba(0, 0, 0, 0.651);
+}
+.txt-arriv #submit { width: 90%;}
+.hart {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 4px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hart:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.hn {
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+<!--------------------BEST SELLER------------------------>
+.bestSell {
+    width: 100%;
+    height: 120vh;
+background-color: wheat;
+    padding-top: 30px;
+}
+
+.box-seller {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.card-seller {
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+
+.card-seller:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.226);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.itm-seller {
+    display: flex;
+    padding: 10px;
+}
+
+.card-seller .txt-arriv {
+    padding-left: 15px;
+}
+
+.card-seller .txt-arriv h3 {
+    padding: 5px;
+}
+
+.trends {
+    margin: 20px auto;
+
+
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.card-trnd {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.233);
+    transition: 0.3s;
+}
+
+.card-trnd:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.txt-trnd {
+    padding: 5px;
+    width: 60%;
+}
+
+.txt-trnd h4 {
+    padding-bottom: 10px;
+}
+
+.txt-trnd p {
+    color: gray;
+    font-size: 16px;
+}
+
+.img-trnd {
+    width: 35%;
+    height: 90%;
+}
+
+.img-trnd img {
+    width: 100%;
+    height: 100%;
+}
+#shopp,#donee{
+    font-size: 25px;
+    position: relative;
+    left: 90%;
+    color: rgb(158, 126, 189);
+}
+/*--------------------TREND IN 2023------------------------*/
+.trend-tow {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    background-color: rgba(169, 230, 248, 0.76);
+
+}
+
+.trend-tow h1 {
+    padding-left: 7rem;
+    padding-bottom: 10px;
+}
+
+.a-tow {
+    border-top: 1px solid rgba(137, 43, 226, 0.26);
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.boxs-tow {
+
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    gap: 20px;
+padding-top: 10px;
+}
+
+.it-tow {
+    
+    background-color: white;
+    width: 25%;
+    height: 90%;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.it-tow:hover {
+    transform: scale(1.02);
+}
+
+.img-tw {
+    width: 60%;
+    height: 90px;
+    margin: auto;
+}
+
+.img-tw img {
+    width: 100%;
+    height: 100%;
+}
+
+.tx-tw {
+    width: 100%;
+    height: 50%;
+    padding: 15px;
+}
+
+.tx-tw p {
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.conTx {
+    color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-left,.arrow-right {
+    margin: 2px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    color: rgb(173, 115, 226);
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(137, 43, 226, 0.534);
+    transition: 0.3s;
+}
+
+.arrow-left:hover,.arrow-right:hover {
+    transform: scale(1.1);
+}
+/*--------------------LATS REVIWES------------------------*/
+.reviw {
+    height: 60vh;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.reviw h1 {
+    padding-left: 7rem;
+    margin-bottom: 10px;
+}
+
+.box-review {
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(137, 43, 226, 0.342);
+
+}
+
+.itm-review {
+    width: 30%;
+    height: 90%;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.itm-review:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.151);
+    cursor: pointer;
+}
+
+.img-rev {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    height: 60%;
+}
+
+.img-rev img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt-rev {
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.712);
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+/*--------------------RECENT VIEW------------------------*/
+.recent {
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(196, 243, 243, 0.589);
+}
+
+.recent h1 {
+    padding-top: 20px;
+    padding-left: 7rem;
+    margin-bottom: 10px;
+
+}
+
+.box-recent {
+    border-top: 1px solid rgba(137, 43, 226, 0.342);
+    padding-top: 20px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-recent {
+    width: 20%;
+    height: 70%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-recent:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.al-tag {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.img-recent {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.img-recent img {
+    width: 100%;
+    height: 90%;
+}
+
+.price-recent {
+    width: 100%;
+    height: 20%;
+
+}
+
+.price-recent span {
+    color: rgba(0, 0, 0, 0.863);
+    font-style: italic;
+    font-size: large;
+    padding-right: 10px;
+}
+
+.price-recent h4 {
+    padding-top: 8px;
+    font-size: 14px;
+}
+/*--------------------BRANDS------------------------*/
+.brand {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-brand {
+    width: 80%;
+    height: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.brando {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.brando:hover {
+    transform: scale(1.1);
+
+}
+
+.brand .arow {
+    box-shadow: none;
+    transition: 0.1s;
+}
+/*--------------------SEND EMAIL------------------------*/
+.sign {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-sin {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(250, 235, 215, 0.349);
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.274);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txt-sin {
+    width: 30%;
+
+    display: flex;
+}
+
+.log-sin {
+    width: 20%;
+    margin-right: 15px;
+}
+
+.sin {
+    width: 50%;
+
+
+}
+
+.sin input {
+    width: 70%;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid rgba(137, 43, 226, 0.493);
+    border-radius: 3px;
+}
+
+.sin button {
+    width: 20%;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: -5px;
+    transition: 0.3s;
+}
+
+.sin button:hover {
+    background-color: transparent;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+
+}
+/*-------------------------FOOTER-----------------------------*/
+footer {
+    padding-top: 20px;
+    height: 60vh;
+    width: 100%;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-footer {
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+}
+.one-footer h1{
+    padding-bottom: 8px;
+    
+}
+
+.one-footer p {
+    color: blueviolet;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+.ico-footer {
+    color: blue;
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.ico-footer i:hover {
+    transform: scale(1.2);
+}
+.tow-footer {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.first-fot,
+.scand-fot {
+    width: 50%;
+
+}
+.first-fot a {
+    padding-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.first-fot a:hover,
+.scand-fot a:hover {
+    color: blueviolet;
+}
+
+.scand-fot a {
+    padding-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.copyRait {
+    height: 15%;
+    background-color: rgba(250, 235, 215, 0.274);
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tx-rite {
+    font-size: 12px;
+}
+
+.img-rait {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.img-rait img {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.img-rait button {
+    background-color: blueviolet;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes move {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    header,
+    .ul-nav,
+    .img-hom {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-nav {
+        font-size: 16px;
+        padding-left: 20px;
+        width: 20%;
+
+    }
+
+    .text-hom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item-del {
+        display: inline-block;
+    }
+
+    .card-del {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-cardd img {
+        width: 50%;
+    }
+
+    .imgCard img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .textCard {
+        width: 70%;
+        font-size: 12px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card-tow {
+        height: 200px;
+    }
+
+    .card-tow .add-cart {
+        margin: auto;
+        margin-top:  30px;
+        width: 90%;
+        height: 25px;
+       font-size: 14px;
+
+    }
+    .img-cardd {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+    .tex-cardd {
+        text-align: center;
+        height: 20%;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+
+    .img-cardd img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-seller {
+        width: 40%;
+        height: 30%;
+        font-size: 14px;
+    }
+
+    .item-seller {
+        width: 100%;
+        height: 90%;
+        padding: 0;
+    }
+
+    .img-seller img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .img-rev {
+
+
+        height: 50%;
+    }
+
+    .txt-arriv {
+        width: 100%;
+        padding: 0;
+        font-size: 12px;
+
+    }
+
+    .box-recent {
+        flex-wrap: wrap;
+        height: 80%;
+    }
+
+    .card-recent {
+        width: 25%;
+        height: 50%;
+
+    }
+
+    .img-arr img {
+        width: 100%;
+    }
+
+    .img-recent {
+        width: 70%;
+        height: 40%;
+        margin: auto;
+    }
+
+    .img-recent img {
+        width: 60%;
+        height: 70%;
+    }
+
+    .box-sin {
+        font-size: 12px;
+    }
+
+    .log-sin {
+        width: 20%;
+        margin-right: 10px;
+    }
+
+    .log-sin img {
+        width: 40px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .scand-fot a {
+        font-size: 14px;
+    }
+
+    .first-fot a {
+        font-size: 14px;
+    }
+
+    .one-footer {
+        padding: 20px;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .nav-arriv {
+        justify-content: space-evenly;
+    }
+
+    .nav-arriv ul li a {
+        font-size: 14px;
+    }
+
+    .img-rait {
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+}
+
+/*-------------------media 600px--------------*/
+@media screen and (max-width: 600px) {
+
+    header,
+    .ul-nav,
+    .img-hom {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .logo-nav {
+        font-size: 12px;
+        padding-left: 20px;
+        width: 40%;
+
+    }
+
+    .text-hom {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .text-hom h1,
+    span,
+    p,
+    #he {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .item-del {
+        display: inline-block;
+    }
+
+    .all-sels {
+        display: inline-block;
+    }
+
+    .sec-sel {
+        width: 70%;
+        margin: auto;
+
+    }
+
+    .nna span {
+        display: none;
+    }
+
+    .text-one {
+        font-size: 13px;
+
+    }
+
+    .text-one h1,
+    h2,
+    h3,
+    p {
+        font-size: 16px;
+    }
+
+    .sub #submit {
+
+        width: 150px;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .sub {
+        text-align: center;
+    }
+
+    .bar-nav ul {
+        display: none;
+        list-style: none;
+    }
+
+    .con-tow {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .card-tow .add-cart {
+      
+       
+        width: 100%;
+        margin:20px auto;
+        height: 25px;
+       font-size: 14px;
+
+    }
+
+    .card-del {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-cardd img {
+        width: 50%;
+    }
+
+    .imgCard img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .textCard {
+        width: 70%;
+        font-size: 12px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card-tow {
+        height: 200px;
+        width: 50%;
+    }
+
+    .tag,
+    .sal {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        font-size: 8px;
+        text-align: center;
+
+    }
+
+
+
+    .contnerIcon {
+        width: 100%;
+        display: inline-block;
+        
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+    .cardIcon {
+        width: 50%;
+        margin: auto;
+height: 120px;
+        padding: 15px;
+        transition: 0.3s;
+    }
+
+    .text-lab h2,
+    p,
+    .star {
+        font-size: 11px;
+    }
+    .text-lab {
+        padding-left: 10px;
+        width: 30%;
+        margin: auto;
+    }
+
+    .bestSell {
+
+        height: auto;
+    }
+
+    .box-seller {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap
+    }
+
+    .card-seller {
+        width: 90%;
+        height: 35%;
+        font-size: 14px;
+    }
+
+    .itm-seller {
+        display: flex;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .textCard {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .img-arr {
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt-arriv {
+        margin: auto;
+    }
+
+    .arrivel {
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .arriv-box {
+        display: inline-block;
+    }
+
+    .all-item {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .part-arriv {
+        width: 70%;
+
+        margin: 10px auto;
+    }
+
+
+
+    .img-cardd {
+        width: 60px;
+        height: 70px;
+        margin: auto;
+    }
+
+    .img-cardd img {
+        width: 60px;
+        height: 70px;
+    }
+
+
+
+
+
+
+    .nav-arriv ul {
+        display: none;
+    }
+
+    .box-recent {
+        flex-wrap: wrap;
+        height: 80%;
+    }
+
+    .card-recent {
+        width: 25%;
+        height: 50%;
+
+    }
+
+    .trends {
+        width: 100%;
+        height: 20%;
+        background-color: white;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .trend-tow {
+        padding: 20px;
+        height: auto;
+        width: 100%;
+        background-color: rgba(169, 230, 248, 0.76);
+    }
+
+    .card-trnd {
+        width: 90%;
+        height: 40%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .it-tow {
+        flex-wrap: nowrap;
+        width: 40%;
+        height: 90%;
+
+    }
+
+    .arow {
+        display: none;
+    }
+
+    .img-recent {
+        width: 70%;
+        height: 40%;
+        margin: auto;
+    }
+
+    .reviw {
+        height: auto;
+
+    }
+
+    .box-review {
+        display: inline-block;
+    }
+
+    .itm-review {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .recent {
+        height: auto;
+
+    }
+
+    .box-recent {
+
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .con-brand {
+        width: 80%;
+        height: 60%;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box-sin {
+        padding: 10px;
+        display: inline-block;
+
+    }
+
+    .txt-sin {
+        width: 80%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .sin {
+        width: 90%;
+    }
+
+    .card-recent {
+        width: 45%;
+        height: auto;
+
+    }
+
+    .sign {
+        height: auto;
+
+
+    }
+
+
+    .log-sin img {
+        width: 40px;
+        height: 30px;
+    }
+
+    footer {
+
+        padding-top: 20px;
+        height: 60vh;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .scand-fot a {
+        font-size: 11px;
+    }
+
+    .first-fot a {
+        font-size: 11px;
+    }
+
+    .one-footer {
+        padding: 20px;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .one-footer h5 {
+        font-size: 10px;
+    }
+
+    .ico-footer {
+        color: blue;
+        font-size: 15px;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        cursor: pointer
+    }
+
+    .img-rait {
+
+        width: 50%;
+        align-items: center;
+        justify-content: end;
+        flex-wrap: nowrap;
+    }
+
+    .img-rait img {
+        width: 10px;
+        height: 10px;
+
+    }
+    .tx-rite {
+        font-size: 9px;
+    }
+    .sin input {
+        width: 75%;
+    }
+}
